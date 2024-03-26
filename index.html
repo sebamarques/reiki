@@ -13,25 +13,47 @@
                 <a href="#inicio">Inicio</a>
             </li>
             <li>
-                <a href="#precio">Precios</a>
+                <a href="#servicios">Servicios</a>
             </li>
             <li>
-                <a href="#contacto">Contacto</a>
+                <a href="#info">Informacion</a>
             </li>
         </ul>
     </nav>
     <header>
         <section id="inicio">
+            <img alt="imagen de Margarita Blanco">
             <h3>Margarita Blanco</h3>
             <p>Informacion al respecto</p>
         </section>
     </header>
     <main>
-        <article id="precio">
-
+        <article id="servicios">
+            <!--Esta table tiene que ser con inner.html para asi cargo todos los datos desde un json-->
+            <table>
+                <thead class="">
+                    <tr>
+                        <th>Tiempo</th>
+                        <th>Precio</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30 min</td>
+                        <td>1000 pesos</td>
+                        <td>Masaje</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>HOlAAAA soy un footer</td>
+                    <td>HOLAAA soy otro footer</td>
+                    <td>HOLAAA soy otro footer</td>
+                </tfoot>
+            </table>
         </article>
         <h3>Agendar turno</h3>
-        <form id="contacto">
+        <form id="info">
             <label>Nombre:</label>
             <input type="text">
             <label>Apellido:</label>
@@ -39,8 +61,9 @@
             <label>Servicio:</label>
             <input>
             <label>Fecha:</label>
-            <input>
+            <input type="date">
         </form>
+        <article></article>
     </main>
     <footer>
         <h4>Contacto</h4>

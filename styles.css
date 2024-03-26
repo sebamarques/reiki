@@ -2,3 +2,29 @@ body{
     background-color: yellow;
     margin:1em;
 }
+/*Nav*/
+nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+nav li {
+    padding-left: 1em;
+}
+a{
+    text-decoration: none;
+    font-size: 2em;
+}
+/*Header*/
+#inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Main*/
+/*el main van a ser 2 "cards" la primera va a ser de masajes y la otra de reiki, van a tener el mismo estilo*/
+#servicios{
+    border: 1px solid black;
+}
+/*Footer*/
