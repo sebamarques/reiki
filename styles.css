@@ -1,5 +1,4 @@
 body{
-    background-color: yellow;
     margin:1em;
 }
 /*Nav*/
@@ -15,6 +14,10 @@ nav li {
 a{
     text-decoration: none;
     font-size: 2em;
+    color:#581e75
+}
+a:hover{
+    color:#b663df;
 }
 /*Header*/
 #inicio{
@@ -25,6 +28,29 @@ a{
 /*Main*/
 /*el main van a ser 2 "cards" la primera va a ser de masajes y la otra de reiki, van a tener el mismo estilo*/
 #servicios{
-    border: 1px solid black;
+    background-color: red;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info input{
+    width: 15%;
+}
+#info select{
+    width: 15%;
+}
+#info button{
+    width: 4em;
 }
 /*Footer*/
+.footer div:first-child{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.footer div:last-child{
+    display: flex;
+    flex-direction: row;
+}

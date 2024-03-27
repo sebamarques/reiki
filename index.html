@@ -29,45 +29,42 @@
     </header>
     <main>
         <article id="servicios">
+            <button onclick="seleccion_masaje()">Masajes</button>
+            <button onclick="seleccion_reiki()">Reiki</button>
             <!--Esta table tiene que ser con inner.html para asi cargo todos los datos desde un json-->
-            <table>
-                <thead class="">
-                    <tr>
-                        <th>Tiempo</th>
-                        <th>Precio</th>
-                        <th>Tipo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>30 min</td>
-                        <td>1000 pesos</td>
-                        <td>Masaje</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <td>HOlAAAA soy un footer</td>
-                    <td>HOLAAA soy otro footer</td>
-                    <td>HOLAAA soy otro footer</td>
-                </tfoot>
-            </table>
         </article>
         <h3>Agendar turno</h3>
         <form id="info">
-            <label>Nombre:</label>
-            <input type="text">
-            <label>Apellido:</label>
-            <input type="text">
-            <label>Servicio:</label>
-            <input>
-            <label>Fecha:</label>
-            <input type="date">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre"type="text" required>
+            <label for="apellido">Apellido:</label>
+            <input id="apellido"type="text" required>
+            <label form="servicio">Servicio:</label>
+            <select id="servicio">
+                <option>Masaje</option>
+                <option>Reiki</option>
+            </select>
+            <label for="mail">Gmail</label>
+            <input id="mail"type="email">
+            <label for="fecha">Fecha:</label>
+            <input id="fecha"type="date">
+            <button type="submit">Enviar</button>
         </form>
         <article></article>
     </main>
-    <footer>
-        <h4>Contacto</h4>
-        <h4>Redes</h4>
+    <footer class="footer">
+        <div>
+            <h4>Contacto</h4>
+            <p>Cel: 0987654321</p>
+            <p>Mail: semeparaysememueve@gmail.com</p>
+            <p>Tel: 473 1234567890</p>
+        </div>
+        <div>
+            <h4>Redes</h4>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Facebook</p>
+        </div>
     </footer>
 
         <script src="script.js"></script>
