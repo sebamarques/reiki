@@ -20,6 +20,7 @@ let reiki = {
 function seleccion_masaje(){
     nuevo_servicio = `
     <section class="servicios">
+    <button onclick="seleccion_reiki()">Reiki</button>
     <h3>${masajes.tipo}</h3>
     <p>${masajes.precio}</p>
     <p>${masajes.descripcion}</p>
@@ -32,6 +33,7 @@ function seleccion_masaje(){
 function seleccion_reiki(){
     nuevo_servicio = `
     <section class="servicios">
+    <button onclick="seleccion_masaje()">Masajes</button>
     <h3>${reiki.tipo}</h3>
     <p>${reiki.precio}</p>
     <p>${reiki.descripcion}</p>

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    <nav>
+    <nav id="nav">
         <ul id="links">
             <li>
                 <a href="#inicio">Inicio</a>
@@ -28,12 +28,11 @@
         </section>
     </header>
     <main>
-        <button onclick="seleccion_masaje()">Masajes</button>
-        <button onclick="seleccion_reiki()">Reiki</button>
         <article id="servicios">
             <!--Esta table tiene que ser con inner.html para asi cargo todos los datos desde un json-->
             <section class="servicios">
-                <h3>Masajes</h3>
+                <button onclick="seleccion_reiki()">Reiki</button>
+                <h3>masajes</h3>
                 <p>1000</p>
                 <p>lorem ipsum miom miom</p>
                 <p>1 hora</p>
@@ -41,20 +40,22 @@
         </article>
         <form id="info">
             <h3>Agendar turno</h3>
-            <label for="nombre">Nombre:</label>
-            <input id="nombre"type="text" required>
-            <label for="apellido">Apellido:</label>
-            <input id="apellido"type="text" required>
-            <label form="servicio">Servicio:</label>
-            <select id="servicio">
-                <option>Masaje</option>
-                <option>Reiki</option>
-            </select>
-            <label for="mail">Gmail</label>
-            <input id="mail"type="email">
-            <label for="fecha">Fecha:</label>
-            <input id="fecha"type="date">
-            <button type="submit" onclick="enviar_formulario()">Enviar</button>
+            <div class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre"type="text" required>
+                <label for="apellido">Apellido:</label>
+                <input id="apellido"type="text" required>
+                <label form="servicio">Servicio:</label>
+                <select id="servicio" required>
+                    <option>Masaje</option>
+                    <option>Reiki</option>
+                </select>
+                <label for="mail">Gmail</label>
+                <input id="mail"type="email" required>
+                <label for="fecha">Fecha:</label>
+                <input id="fecha"type="date" required>
+                <button type="submit" onclick="enviar_formulario()">Enviar</button>
+            </div>
         </form>
         <article></article>
     </main>
@@ -62,7 +63,7 @@
         <div class="contactarse">
             <h4>Contacto</h4>
             <p>Cel: 0987654321</p>
-            <p>Mail: semeparaysememueve@gmail.com</p>
+            <p>Mail: leoteamopichondepicuru@gmail.com</p>
             <p>Tel: 473 1234567890</p>
         </div>
         <hr>

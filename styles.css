@@ -1,5 +1,5 @@
 body{
-    background-color: #f0ecf2;
+    background-color: black;
     margin:0;
 }
 /*Nav*/
@@ -29,6 +29,7 @@ a:hover{
 }
 /*Main*/
 /*el main van a ser 2 "cards" la primera va a ser de masajes y la otra de reiki, van a tener el mismo estilo*/
+
 #servicios{
     display: flex;
     flex-direction: column;
@@ -44,17 +45,25 @@ a:hover{
     flex-direction: column;
     align-items: center;
 }
+#info .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 5vh;
+}
 #info input{
-    width: 15%;
+    width: 25%;
     border-radius: 5px;
+    margin-bottom: 1vh;
 }
 #info select{
-    width: 15%;
+    width: 25%;
 }
 #info button{
     width: 4em;
 }
-/*Footer*/
+                                        /*Footer*/
 .footer{
     background-color: black;
 }
@@ -79,3 +88,9 @@ button:hover{
     background-color: #a953b9;
     color: white;
     }
+h3{
+    color: white;
+}
+label{
+    color: white;
+}
