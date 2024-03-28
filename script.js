@@ -2,12 +2,16 @@ let servicios = document.getElementById("servicios");
 let mostrar ="";
 let nuevo_servicio ="";
 let masajes ={
+    img:"",
+    alt_img:"",
     tipo:"masaje",
     precio:1000,
     descripcion:"lorem ipsum lorem ipsum",
     duracion:"1 hora"
 }
 let reiki = {
+    img:"",
+    alt_img:"",
     tipo:"reiki",
     precio:1500,
     descripcion:"lorem ipsum lorem ipsum",
@@ -15,9 +19,7 @@ let reiki = {
 }
 function seleccion_masaje(){
     nuevo_servicio = `
-    <section>
-    <button onclick="seleccion_masaje()">Masajes</button>
-    <button onclick="seleccion_reiki()">Reiki</button>
+    <section class="servicios">
     <h3>${masajes.tipo}</h3>
     <p>${masajes.precio}</p>
     <p>${masajes.descripcion}</p>
@@ -29,9 +31,7 @@ function seleccion_masaje(){
 
 function seleccion_reiki(){
     nuevo_servicio = `
-    <button onclick="seleccion_masaje()">Masajes</button>
-    <button onclick="seleccion_reiki()">Reiki</button>
-    <section>
+    <section class="servicios">
     <h3>${reiki.tipo}</h3>
     <p>${reiki.precio}</p>
     <p>${reiki.descripcion}</p>
@@ -39,4 +39,8 @@ function seleccion_reiki(){
     </section>
     `
     servicios.innerHTML = nuevo_servicio
+}
+
+function enviar_formulario(){
+    console.log("sexxo")
 }

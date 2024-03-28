@@ -1,5 +1,6 @@
 body{
-    margin:1em;
+    background-color: #f0ecf2;
+    margin:0;
 }
 /*Nav*/
 nav ul{
@@ -7,6 +8,7 @@ nav ul{
     flex-direction: row;
     list-style: none;
     justify-content: flex-end;
+    margin-right: 5%;
 }
 nav li {
     padding-left: 1em;
@@ -28,7 +30,14 @@ a:hover{
 /*Main*/
 /*el main van a ser 2 "cards" la primera va a ser de masajes y la otra de reiki, van a tener el mismo estilo*/
 #servicios{
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicios{
+    background-color:#7f7979;
+    width: 60%;
+    text-align: center;
 }
 #info{
     display: flex;
@@ -37,6 +46,7 @@ a:hover{
 }
 #info input{
     width: 15%;
+    border-radius: 5px;
 }
 #info select{
     width: 15%;
@@ -45,12 +55,27 @@ a:hover{
     width: 4em;
 }
 /*Footer*/
-.footer div:first-child{
-    background-color: red;
+.footer{
+    background-color: black;
+}
+.contactarse{
     display: flex;
     flex-direction: column;
+    color: white;
+    margin-left: 2%;
 }
-.footer div:last-child{
-    display: flex;
-    flex-direction: row;
+/*Otros estilos*/
+hr{
+    color: #581e75;
 }
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-radius: 5px;
+    background-color: white;
+    color: #a953b9;
+}
+button:hover{
+    background-color: #a953b9;
+    color: white;
+    }
