@@ -1,80 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reiki</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <nav id="nav">
-        <ul id="links">
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
-            <li>
-                <a href="#servicios">Servicios</a>
-            </li>
-            <li>
-                <a href="#info">Informacion</a>
-            </li>
-        </ul>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REIKI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7dd75d41c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <header>
-        <section id="inicio">
-            <img alt="imagen de Margarita Blanco">
-            <h3>Margarita Blanco</h3>
-            <p>Informacion al respecto</p>
-        </section>
+        <nav class="nav-bar">
+            <ul>
+                    <li><a href="/contacto.html" class="nav-anchor">Contacto</a></li>
+                    <li><a href="/servicios.html" class="nav-anchor">Servicios</a></li>
+                <li><a href="/sobre_mi.html" class="nav-anchor">Sobre mi</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <!--Aca va una imagen-->
+            <h1>Nombre</h1>
+            <p>Descripcion</p>
+        </div>
     </header>
     <main>
-        <article id="servicios">
-            <!--Esta table tiene que ser con inner.html para asi cargo todos los datos desde un json-->
-            <section class="servicios">
-                <button onclick="seleccion_reiki()">Reiki</button>
-                <h3>masajes</h3>
-                <p>1000</p>
-                <p>lorem ipsum miom miom</p>
-                <p>1 hora</p>
-                </section>
-        </article>
-        <form id="info">
-            <h3>Agendar turno</h3>
-            <div class="formulario">
-                <label for="nombre">Nombre:</label>
-                <input id="nombre"type="text" required>
-                <label for="apellido">Apellido:</label>
-                <input id="apellido"type="text" required>
-                <label form="servicio">Servicio:</label>
-                <select id="servicio" required>
-                    <option>Masaje</option>
-                    <option>Reiki</option>
-                </select>
-                <label for="mail">Gmail</label>
-                <input id="mail"type="email" required>
-                <label for="fecha">Fecha:</label>
-                <input id="fecha"type="date" required>
-                <button type="submit" onclick="enviar_formulario()">Enviar</button>
-            </div>
-        </form>
-        <article></article>
+        <h2>Servicios</h2>
+        <section id="servicios">
+            <button>Reiki</button>
+            <button>Masajes</button>
+        </section>
     </main>
-    <footer class="footer">
-        <div class="contactarse">
-            <h4>Contacto</h4>
-            <p>Cel: 0987654321</p>
-            <p>Mail: leoteamopichondepicuru@gmail.com</p>
-            <p>Tel: 473 1234567890</p>
-        </div>
-        <hr>
-        <div class="redes">
-            <a href="https://instagram.com">Instagram</a>
-            <a href="https://twitter.com">Twitter</a>
-            <a href="https://facebook.com">Facebook</a>
+    <footer>
+        <div class="container">
+            <div class="footer-div">
+                <h2 class="footer-head">Informacion</h2>
+                    <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-div">
+                <h2 class="footer-head">Redes</h2>
+                    <a href="https://instagram.com" class="footer-anchor"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" class="footer-anchor"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://whatsapp.com" class="footer-anchor"><i class="fab fa-whatsapp"></i></a>
+            </div>
         </div>
     </footer>
-
-        <script src="script.js"></script>
-    </body>
-
+    <script src="script.js"></script>
+</body>
 </html>

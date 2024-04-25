@@ -1,96 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
 body{
-    background-color: black;
-    margin:0;
-}
-/*Nav*/
-nav ul{
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-end;
-    margin-right: 5%;
-}
-nav li {
-    padding-left: 1em;
-}
-a{
-    text-decoration: none;
-    font-size: 2em;
-    color:#581e75
-}
-a:hover{
-    color:#b663df;
+    line-height: 1,5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 /*Header*/
-#inicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header{
+    background: #fff;
 }
-/*Main*/
-/*el main van a ser 2 "cards" la primera va a ser de masajes y la otra de reiki, van a tener el mismo estilo*/
+header nav{
+    font-size: 22px;
+    width: 1200px;
+    margin: 10px 5px;
+    height: 50px;
+}
 
-#servicios{
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+ul li{
+    list-style: none;
+}
+.nav-anchor{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #2f0a34;
+    transition: all 0.5s ease;
+}
+.nav-anchor:hover{
+    color: #dd2cf5;
+}
+.hero-section img{
+    border-radius: 50%;
+}
+.hero-section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.servicios{
-    background-color:#7f7979;
-    width: 60%;
+
+/*Main*/
+
+/*Footer*/
+footer{
+    display: flexbox;
+    flex-wrap: wrap;
+    
+}
+footer .container{
+    background-color: #ffcff6;
+    width: 100%;
+    height: auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.footer-div{
+    width: 50%;
     text-align: center;
 }
-#info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-head{
+    font-size: 24px;
+    margin-bottom: 30px;
 }
-#info .formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin-bottom: 5vh;
-}
-#info input{
-    width: 25%;
-    border-radius: 5px;
-    margin-bottom: 1vh;
-}
-#info select{
-    width: 25%;
-}
-#info button{
-    width: 4em;
-}
-                                        /*Footer*/
-.footer{
-    background-color: black;
-}
-.contactarse{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-left: 2%;
-}
-/*Otros estilos*/
-hr{
-    color: #581e75;
-}
-button{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    border-radius: 5px;
+footer .container .footer-div .footer-anchor{
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #dd2cf5;
     background-color: white;
-    color: #a953b9;
+    transition: all 0.3s ease;
+    margin: 2px 10px;
 }
-button:hover{
-    background-color: #a953b9;
+footer .container .footer-div a:hover{
     color: white;
-    }
-h3{
-    color: white;
-}
-label{
-    color: white;
+    background: #dd2cf5;
 }
